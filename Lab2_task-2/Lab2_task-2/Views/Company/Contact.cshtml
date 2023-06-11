@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Contact";
+}
+
+<div>
+    <a href="/">Home</a>
+    <a href="/Company/Service">Service</a>
+    <a href="/Company/Teams">Teams and Member</a>
+    <a href="/Company/Contact">Contact</a>
+
+</div>
+
+<hr />
+<h2>Contact With Us:</h2> <hr />
+<h4>Mobile: @ViewBag.num</h4>
+<h4>Mobile: <a href="@ViewBag.mail">@ViewBag.mail</a></h4>
+
+<hr />
+
+<h3>Fill up the Form:</h3>
+
+<form>
+    <div class="mb-3">
+        <label for="nameInput" class="form-label">Name</label>
+        <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
+    </div>
+    <div class="mb-3">
+        <label for="emailInput" class="form-label">Email</label>
+        <input type="email" class="form-control" id="emailInput" placeholder="Enter your email">
+    </div>
+    <div class="mb-3">
+        <label for="phoneInput" class="form-label">Phone</label>
+        <input type="tel" class="form-control" id="phoneInput" placeholder="Enter your phone number">
+    </div>
+    <div class="mb-3">
+        <label for="queryInput" class="form-label">Query</label>
+        <textarea class="form-control" id="queryInput" rows="4" placeholder="Enter your query"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
